@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Traxccel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/Layer_1.png" alt="Traxccel Logo">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <span class="navbar-text">
+                    Don’t have an account?&nbsp;Get in touch
+                    <a href="#" class="ms-2"><i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Sign up</h2>
+            <p class="info">Please use your work email to sign up.</p>
+        </div>
+
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="johndoe@example.com" required>
+            </div>
+            <div class="mb-3 position-relative">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                <span class="toggle-password" style="position: absolute; top: 38px; right: 10px; cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </span>
+            </div>
+            <div class="mb-3 position-relative">
+                <label for="password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Confirm password" required>
+                <span class="toggle-password" style="position: absolute; top: 38px; right: 10px; cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </span>
+            </div>
+
+            <div class="incoo">
+                <p>Your password should contain atleast 8 characters.</p>
+            </div>
+
+            <button type="submit" class="btn btn-custom">Sign In</button>
+
+            <hr>
+
+            <div class="policy">
+                <p>By creating an account, you agree to our <a href="">Terms & Condition</a> and have read and acknowledged our <a href="">Privacy Policy.</a>
+                    </p>
+                </div>
+        </form>
+
+    </div>
+    
+    <div class="copyright">
+        <p>&copy; 2024 Traxccel All rights reserved</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/11d220b649.js"></script>
+</body>
+</html>
