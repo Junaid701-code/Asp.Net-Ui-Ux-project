@@ -95,22 +95,37 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
-const togglePassword = document.querySelector('.toggle-password');
+//Js for Svg in the password
+    const togglePassword = document.querySelector('.toggle-password');
     const passwordField = document.querySelector('#password');
-
+    
     togglePassword.addEventListener('click', function () {
         // Toggle the type attribute
         const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
         passwordField.setAttribute('type', type);
-
-        // Toggle the eye icon
+    
+        // Toggle between the "show" and "hide" SVGs
         this.innerHTML = type === 'password' ? 
-        `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye" viewBox="0 0 24 24">
-            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-            <circle cx="12" cy="12" r="3"></circle>
+        `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+            <path d="M10.9508 4.25C9.63078 5.71685 7.98078 6.45 6.00078 6.45C4.02078 6.45 2.37078 5.71685 1.05078 4.25" stroke="#646464" stroke-width="0.825" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.05078 7.54996L2.42578 5.45996" stroke="#646464" stroke-width="0.825" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>` : 
-        `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye-off" viewBox="0 0 24 24">
-            <path d="M17.94 17.94A10.06 10.06 0 0012 20C5 20 1 12 1 12a15.32 15.32 0 014.19-5.65M10.6 10.6a4 4 0 005.65 5.65M9.53 9.53L1 1M15.65 15.65l5.3 5.3M1 12s4-8 11-8a10.06 10.06 0 016.06 1.94"></path>
+        `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+            <path d="M10.9508 4.25C9.63078 5.71685 7.98078 6.45 6.00078 6.45C4.02078 6.45 2.37078 5.71685 1.05078 4.25" stroke="#646464" stroke-width="0.825" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.9507 7.53676L9.58008 5.45996" stroke="#646464" stroke-width="0.825" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.34961 8.6502L4.62461 6.4502" stroke="#646464" stroke-width="0.825" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.65 8.64995L7.375 6.44995" stroke="#646464" stroke-width="0.825" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>`;
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const phoneInput = document.querySelector("#phone");
+        if (phoneInput) {
+            window.intlTelInput(phoneInput, {
+                initialCountry: "auto",
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // For formatting and validation
+            });
+        }
+    });
+
+    

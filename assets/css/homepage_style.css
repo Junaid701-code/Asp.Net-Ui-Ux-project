@@ -10,8 +10,8 @@ body {
 
 /* Main container including navbar and header */
 .homepage-container{
-    background-image: url(../images/Frame\ 1000005334.png);
-    background-size: cover;
+    background: linear-gradient(90deg, rgba(254, 98, 96, 0.00) 0%, rgba(254, 98, 96, 0.20) 124.52%), linear-gradient(180deg, #F9FCFF 0%, #F5F7F9 100%);
+    box-shadow: 0px 5px 12px 2px rgba(92, 156, 212, 0.10);
 }
 .container {
     width: 100%;
@@ -19,7 +19,15 @@ body {
   }
 /* Navbar styles */
 .navbar {
-    padding: 1.25rem 4rem;
+    background: linear-gradient(90deg, rgba(254, 98, 96, 0.00) 0%, rgba(254, 98, 96, 0.20) 124.52%), linear-gradient(180deg, #F9FCFF 0%, #F5F7F9 100%);
+    box-shadow: 0px 5px 10px 2px rgba(92, 156, 212, 0.10);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar stays above other elements */
+    padding: 2rem 4rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 .navbar .nav-link {
@@ -63,7 +71,7 @@ body {
 
 /* Header Section (Main Content) */
 .main-content {
-    padding: 60px 0;
+    padding: 8rem 0;
 }
 .header-left h1 {
     color: #000419;
@@ -621,7 +629,10 @@ opacity: 0px;
     font-weight: 600;
 }
 
-
+.linkk{
+    color: black;
+    text-decoration: none;
+}
 
 
 /* Media queries for smaller screens */

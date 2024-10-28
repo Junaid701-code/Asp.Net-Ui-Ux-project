@@ -1,0 +1,265 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px; 
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* Optional: Add a max-width to control the upper limit */
+  }
+/* Navbar styles */
+.navbar {
+    background: linear-gradient(90deg, rgba(254, 98, 96, 0.00) 0%, rgba(254, 98, 96, 0.20) 124.52%), linear-gradient(180deg, #F9FCFF 0%, #F5F7F9 100%);
+    box-shadow: 0px 5px 12px 2px rgba(92, 156, 212, 0.10);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar stays above other elements */
+    padding: 1.25rem 4rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.sign-in-btn {
+    display: flex;
+    padding: 0.625rem 1.125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background: #FE6260;
+    color: #FAFAFA;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; 
+    text-decoration: none;
+}
+
+.vertical-separator {
+    height: 30px;
+    width: 2px;
+    background-color: #000419;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.heading{
+    font-family: 'Poppins';
+    text-align: center;
+    margin: 3rem 0rem;
+    font-weight: 900;
+    font-size: 2rem;
+    padding-top: 5rem;
+}
+.policy_info h2{
+    font-weight:600;
+    font-size: 1.5rem;
+}
+.policy_info p{
+    padding: 1.5rem 0rem;
+
+}
+p a{
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+.footer {
+    background-image: url(../images/Frame\ 1000005334.png);
+    background-size: cover;
+    padding: 64px 64px;
+    border-radius: 16px 16px 0 0;
+    color: #333;
+}
+
+.footer-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 16px;
+}
+
+.footer-column h3 {
+    color: #000419;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+.li h3{
+    padding-bottom: 2rem;
+}
+hr{
+width: 0px;
+height: 68px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+}
+
+.footer-links{
+    font-weight: 600;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li{
+    padding-bottom: 1.5rem;
+}
+
+.footer-links a {
+    color: #000419;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-decoration: none;
+}
+
+.footer-socials {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Align items in a row */
+    gap: 16px; /* Add spacing between icons */
+}
+
+.footer-socials li {
+    margin: 0; /* Remove default list margin */
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+}
+.footer-logo {
+    width: 55.63px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 14px;
+    color: #666;
+}
+.footer-column p{
+    font-weight: 600;
+}
+
+
+
+
+/* Media queries for smaller screens */
+@media (max-width: 576px) {
+    .homepage-container, .navbar, .main-content, .features-container, .testimonial-container, .hero-section {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .header-left h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .header-left p {
+        font-size: 16px;
+    }
+    .dashboard-image {
+        width: 100%; /* Ensure the image takes the full width of the container */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image */
+        transform: none; /* Remove any transformation */
+        border-radius: 12px; /* Add some rounding to the corners */
+        position: relative; /* Reset any positioning to keep it within the layout */
+        right: 0; /* Remove the right offset */
+    }
+    .partner-logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .partner-logos img {
+        max-width: 60px;
+        margin: 10px 0;
+    }
+    .features-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .feature-card {
+        width: 100%; /* Full width on small devices */
+        margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+        font-size: 18px; /* Slightly smaller heading */
+    }
+
+    .feature-card p {
+        font-size: 14px; /* Smaller font size for better readability */
+    }
+
+    .testimonial-content {
+        padding: 20px;
+        min-width: 100%;
+    }
+    .footer-container {
+        flex-direction: column; /* Stack footer columns vertically */
+        text-align: center; /* Center text for better readability */
+    }
+
+    .footer-column {
+        margin-bottom: 20px; /* Add spacing between each footer column */
+        padding: 0 10px; /* Reduce padding for smaller screens */
+    }
+
+    .footer-logo {
+        margin-bottom: 15px; /* Add some space below the logo */
+        width: 50px; /* Resize the logo */
+        height: 35px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px; /* Smaller font size for headings */
+    }
+
+    .footer-column p, 
+    .footer-links a {
+        font-size: 14px; /* Adjust font size for text and links */
+    }
+
+    .footer-socials {
+        justify-content: center; /* Center social media icons */
+        gap: 10px; /* Reduce spacing between icons */
+    }
+
+    .footer-socials li {
+        margin-bottom: 0; /* Remove any extra margin */
+    }
+    
+    .footer-bottom {
+        font-size: 12px; /* Smaller font size for copyright text */
+        margin-top: 10px;
+    }
+}
