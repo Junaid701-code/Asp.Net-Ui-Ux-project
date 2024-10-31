@@ -128,4 +128,34 @@ window.addEventListener('scroll', () => {
         }
     });
 
-    
+    function selectItem(element) {
+        // Remove 'selected' class from all items
+        const items = document.querySelectorAll('.main-navs, .main-nav1s');
+        items.forEach(item => item.classList.remove('selected'));
+      
+        // Add 'selected' class to the clicked item
+        element.classList.add('selected');
+      }
+      
+      document.querySelectorAll('.main-navs, .main-nav1s').forEach(item => {
+        item.addEventListener('click', function () {
+            // Remove 'selected' class from all sidebar items
+            document.querySelectorAll('.main-navs, .main-nav1s').forEach(nav => nav.classList.remove('selected'));
+            // Add 'selected' class to clicked item
+            this.classList.add('selected');
+        });
+    });
+
+    function toggleFrameParent9() {
+        const frameParent9 = document.querySelector('.frame-parent9');
+        if (frameParent9.style.display === 'none' || frameParent9.style.display === '') {
+            frameParent9.style.display = 'flex';
+        } else {
+            frameParent9.style.display = 'none';
+        }
+    }
+
+    function toggleFrameWrapper12() {
+        const frameWrapper12 = document.getElementById('frameWrapper12');
+        frameWrapper12.style.display = frameWrapper12.style.display === 'none' ? 'flex' : 'none';
+    }
