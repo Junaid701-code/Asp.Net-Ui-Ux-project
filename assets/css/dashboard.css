@@ -606,6 +606,7 @@ body {
     font-size: 10px;
 }
 .main-nav5s {
+    margin-top: auto;
     align-self: stretch;
     border-radius: 10px;
     background: linear-gradient(180deg, #f9fcff, #f5f7f9);
@@ -621,7 +622,7 @@ body {
 }
 .frame-groups {
     align-self: stretch;
-    height: 593px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -637,5 +638,65 @@ body {
     flex-direction: column;
     padding: 24px;
     gap: 24px;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.report-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 24px;
+    border: 1px solid #dddee5;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Space between radar chart and report box */
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box;
 }
 
+.report-message {
+    display: flex;
+    flex-direction: column;
+    color: #2C2C2C;
+    font-family: 'Poppins', sans-serif;
+}
+
+.report-message strong {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.report-message p {
+    font-size: 14px;
+    color: #5A5F62;
+    margin: 0;
+    padding-right: 8px;
+}
+
+.capabilities-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: #FE6260;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.capabilities-button img {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+
+.capabilities-button:hover {
+    background-color: #D55250;
+}

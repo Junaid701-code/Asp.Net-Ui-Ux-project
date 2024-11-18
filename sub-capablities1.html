@@ -3,7 +3,7 @@
 <head>
   	<meta charset="utf-8">
   	<meta name="viewport" content="initial-scale=1, width=device-width">
-  	<title>Sub-Capablities | Reimagine</title>
+  	<title>Sub Capablities | Reimagine</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   	<link rel="stylesheet"  href="assets/css/sub-capabilities.css"/>
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
@@ -20,34 +20,42 @@
             </div>
             <div class="frame-groups">
             <div class="main-nav-parents">
-            <div class="main-navs" onclick="selectItem(this)">
+                <a href="dashboard.html">
+            <div class="main-nav1s" >
             <img class="iconss" alt="" src="assets/images/layout-dashboard.svg">
             <div class="dashboards">Dashboard</div>
             </div>
+        </a>
+        <a href="capablities.html">
             <div class="main-nav1s">
             <img class="iconss" alt="" src="assets/images/capa.svg">
             <div class="capabilities-wrappers">
             <div class="dashboards">Capabilities</div>
             </div>
             </div>
-            <div class="main-nav1s">
-            <img class="iconss" alt="" src="assets/images/asses.svg">
+        </a>
+        <a href="assesment.html">
+            <div class="main-navs">
+            <img class="iconss" alt="" src="assets/images/assesment.svg">
             <div class="dashboards">Assessment</div>
             </div>
-            <div class="main-nav1s">
-            <a style="text-decoration: none;" href="#">
+        </a>
+        <a href="chat.html">
+            <div class="main-nav1s"> 
             <img class="iconss" alt="" src="assets/images/chat.svg">
             <div class="capabilities-wrappers">
-            <div class="dashboards">Chat</div>
-            </a>
+            <div class="dashboards">Chat</div> 
             </div>
             <img class="selected-icons" alt="" src="chevron-up.svg">
-            </div>
+            </div> 
+        </a>
+        <a href="reports.html">
             <div class="main-nav1s">
-            <img class="iconss" alt="" src="assets/images/setting.svg">
-            <div class="dashboards">Preferences</div>
+            <img class="iconss" alt="" src="assets/images/Group 2295.svg">
+            <div class="dashboards">Reports</div>
             <img class="selected-icons" alt="" src="chevron-down.svg">
             </div>
+        </a>
             </div>
             <div class="main-nav5s">
             <div class="efficiency-plan-project-id-aq-wrapper">
@@ -74,10 +82,11 @@
                 </div>
                 <div class="header-nav2-wrapper">
                 <div class="header-nav2">
-                <img class="icons" alt="" src="assets/images/Group 2281.svg">
+                <img id="bellIcon" onclick="toggleNotification()"  class="icons" alt="" src="assets/images/Group 2281.svg">
                 <img class="header-nav2-child" alt="" src="assets/images/Line 1.svg">
-                <img class="icons" alt="" src="assets/images/Group 1659.svg">
-                <img class="header-nav2-child" alt="" src="assets/images/Group 1659.svg">
+                <div class="notification-container" id="notificationContainer">
+                    <p class="notification-text">No notifications</p>
+                </div>
                 <div class="header-nav2-inner">
                 <div class="frame-container">
                 <div class="user-wrapper">
@@ -113,63 +122,72 @@
                 <div class="frame-parent4">
                 <div class="strategic-management-wrapper">
                 <div class="frame-parent5">
-                <div class="frame-parent6">
-                <div class="strategic-management-wrapper">
-                <div class="strategic-management">Strategic Management</div>
+                    <div class="frame-parent6">
+                        <div class="strategic-management-wrapper">
+                            <div class="strategic-management">Strategic Management <span>0/3</span></div>
+                        </div>
+                        <div class="frame-wrapper2 dropdown-wrapper">
+                            <img class="frame-item dropdown-icon" alt="" src="assets/images/down.svg" onclick="toggleDropdown()" />
+                            <div id="dropdownMenu" class="dropdown-menu">
+                                <a href="#"onclick="toggleFrameWrapper12()" style="text-decoration: none; color: black;"><p>Data AI+VISION <img src="assets/images/Frame 1000005317 (3).svg" alt=""></p></a>
+                                <p>Option 2</p>
+                                <p>Option 3</p>
+                            </div>
+                        </div>
+                    </div>
+  
+                  
+                    <div class="frame-parent6">
+                        <div class="strategic-management-wrapper">
+                            <div class="strategic-management">Operational Efficiency <span>0/3</span></div>
+                        </div>
+                        <div class="frame-wrapper2 dropdown-wrapper">
+                            <img class="frame-item dropdown-icon" alt="" src="assets/images/down.svg" onclick="toggleDropdown()" />
+                            <div id="dropdownMenu" class="dropdown-menu">
+                                <p>Option 1</p>
+                                <p>Option 2</p>
+                                <p>Option 3</p>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="frame-parent6">
+                        <div class="strategic-management-wrapper">
+                            <div class="strategic-management">HR Management <span>0/3</span></div>
+                        </div>
+                        <div class="frame-wrapper2 dropdown-wrapper">
+                            <img class="frame-item dropdown-icon" alt="" src="assets/images/down.svg" onclick="toggleDropdown()" />
+                            <div id="dropdownMenu" class="dropdown-menu">
+                                <p>Option 1</p>
+                                <p>Option 2</p>
+                                <p>Option 3</p>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="frame-parent6">
+                        <div class="strategic-management-wrapper">
+                            <div class="strategic-management">Financial Management <span>0/3</span></div>
+                        </div>
+                        <div class="frame-wrapper2 dropdown-wrapper">
+                            <img class="frame-item dropdown-icon" alt="" src="assets/images/down.svg" onclick="toggleDropdown()" />
+                            <div id="dropdownMenu" class="dropdown-menu">
+                                <p>Option 1</p>
+                                <p>Option 2</p>
+                                <p>Option 3</p>
+                            </div>
+                        </div>
+                    </div>
+  
                 </div>
-                <div class="frame-wrapper2">
-                <div class="frame-wrapper3" onclick="toggleFrameWrapper12()">
-                <a href="#"><img class="frame-item" alt="" src="assets/images/Frame 1000005317 (3).svg"></a>
                 </div>
-                </div>
-                </div> 
-                <div class="frame-parent7">
-                <div class="strategic-management-wrapper">
-                <div class="strategic-management">Operational Efficiency</div>
-                </div>
-                <div class="frame-wrapper2">
-                <div class="frame-wrapper3">
-                <img class="frame-item" alt="" src="assets/images/Frame 1000005317 (3).svg">
-                </div>
-                </div>
-                </div>
-                <div class="frame-parent7">
-                <div class="strategic-management-wrapper">
-                <div class="strategic-management">HR Management</div>
-                </div>
-                <div class="frame-wrapper6">
-                <div class="resolved-parent">
-                <div class="resolved">2/2 resolved</div>
-                <img class="frame-item" alt="" src="assets/images/Frame 1000005317 (3).svg">
-                </div>
-                </div>
-                <div class="frame-wrapper2">
-                <div class="frame-wrapper3">
-                <img class="frame-item" alt="" src="assets/images/Frame 1000005317 (3).svg">
-                </div>
-                </div>
-                </div>
-                <div class="frame-parent7">
-                <div class="strategic-management-wrapper">
-                <div class="strategic-management">Financial Management</div>
-                </div>
-                <div class="frame-wrapper6">
-                <div class="resolved-parent">
-                <div class="resolved">2/4 resolved</div>
-                <img class="frame-item" alt="" src="assets/images/Frame 1000005317 (3).svg">
-                </div>
-                </div>
-                <div class="frame-wrapper2">
-                <div class="frame-wrapper3">
-                <img class="frame-item" alt="" src="assets/images/Frame 1000005317 (3).svg">
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                <div class="frame-wrapper12" id="frameWrapper12">
+ 
+                <div class="frame-wrapper12" >
                 <div class="sub-capability-dataai-vision-parent">
-                <div class="strategic-management">Sub Capability: Data+AI Vision</div>
+                    <div class="sub-capability-header">
+                        <div class="strategic-management">Sub Capability: Data+AI Vision</div>
+                        <button class="save-progress-button">Save Progress <img src="assets/images/save.svg" alt=""></button>
+                    </div>
                 <div class="vector-parent">
                 <img class="vector-icon" alt="" src="assets/images/Vector 2.svg">
                 <div class="frame-parent10">
@@ -231,11 +249,7 @@
                 </div>
                 </div>
                 <div class="frame-wrapper13">
-                <div class="frame-wrapper14">
-                <div class="explain-your-current-status-in-wrapper">
-                <div class="explain-your-current">Explain your current status in this capability.</div>
-                </div>
-                </div>
+                    <textarea class="custom-textarea" placeholder="Explain your current status in this capability."></textarea>
                 </div>
                 </div>
                 <img class="frame-child5" alt="" src="Vector 2.svg">
@@ -297,29 +311,22 @@
                 </div>
                 </div>
                 <div class="frame-wrapper13">
-                <div class="frame-wrapper14">
-                <div class="explain-your-current-status-in-wrapper">
-                <div class="explain-your-current">Explain your future & expected status in this capability.</div>
-                </div>
-                </div>
+                    <textarea class="custom-textarea" placeholder="Explain your current status in this capability."></textarea>
                 </div>
                 </div>
                 </div>
                 </div>
                 <div class="frame-parent15">
                 <div class="frame-parent16">
-                    <a href="sub-capabilities.html">
                 <img class="frame-child6" alt="" src="assets/images/Frame 1000005317 (2).svg">
-                <div class="next">Back
-            </a>
-        </div>
+                <div class="next">Back</div>
                 </div>
-                <div class="next">Question 1 of 14</div>
+                <div class="next">Question 14 of 14</div>
                 <div class="next-group">
                 <div class="next-parent disabled" id="nextLink">                    
-                    <a href="dashboard.html" class="next" style="color: black; text-decoration: none;">
+                    <a href="assesment.html" id="submitLink" class="next" style="color: black; text-decoration: none;">
                     Submit
-                    <img class="frame-item" alt="" src="assets/images/Frame 1000005317 (3).svg">
+                    <img class="frame-item" alt="" src="assets/images/Frame 1000005317 (3).svg" style="margin-left: 10px; ">
                 </a>
             </div>
                 </div>
@@ -333,7 +340,51 @@
                 </div>
                 </div>
                 </div>
-                <script>document.addEventListener('DOMContentLoaded', function() {
+                <script src="assets/js/script.js"></script>
+                <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const strategicManagementCounter = document.querySelector('.strategic-management span'); // Counter element
+    const submitLink = document.getElementById('submitLink'); // Anchor tag for submission (if present)
+
+    // Load the saved counter state from local storage
+    const savedCounter = localStorage.getItem('strategicManagementCounter');
+    if (savedCounter) {
+        strategicManagementCounter.textContent = savedCounter; // Load the saved state
+    }
+
+    // Handle Submit Action
+    if (submitLink) {
+        submitLink.addEventListener('click', function () {
+            // Parse the current counter value
+            const currentCounter = parseInt(strategicManagementCounter.textContent.split('/')[0], 10) || 0;
+            const total = parseInt(strategicManagementCounter.textContent.split('/')[1], 10) || 3;
+
+            // Increment the counter if it is less than the total
+            let updatedCounter = currentCounter + 1;
+            if (updatedCounter > total) {
+                updatedCounter = total; // Ensure it does not exceed the maximum
+            }
+
+            // Update the counter dynamically and in local storage
+            const newCounterValue = `${updatedCounter}/${total}`;
+            strategicManagementCounter.textContent = newCounterValue;
+            localStorage.setItem('strategicManagementCounter', newCounterValue); // Save state
+        });
+    }
+});
+
+                    
+                    // function for notification in a bell icon//
+ function toggleNotification() {
+        const container = document.getElementById('notificationContainer');
+        if (container.style.display === 'block') {
+            container.style.display = 'none';
+        } else {
+            container.style.display = 'block';
+        }
+    }
+    //js for checkboxes and next button//
+ document.addEventListener('DOMContentLoaded', function() {
                     const checkboxes = document.querySelectorAll('.real-checkbox'); // Select all checkboxes
                     const nextLink = document.getElementById('nextLink'); // Select the Next button container
                 
@@ -351,7 +402,28 @@
                     // Initialize button state on page load
                     updateNextLinkState();
                 });
+//JS for dropdown menu//
+  function toggleDropdown() {
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    const dashedBox = document.querySelector('.frame-parent6'); // Adjust the selector to your dashed box
+
+    if (dropdownMenu.style.display === 'block') {
+        // Collapse the dropdown
+        dropdownMenu.style.display = 'none';
+        dashedBox.style.height = 'auto'; // Reset the height
+    } else {
+        // Expand the dropdown
+        dropdownMenu.style.display = 'block';
+
+        // Dynamically adjust height to fit dropdown content
+        const dropdownHeight = dropdownMenu.offsetHeight;
+        const baseHeight = 60; // Height of the dashed box without dropdown
+        dashedBox.style.height = `${baseHeight + dropdownHeight}px`; // Adjust height to fit dropdown
+    }
+}
+
+
                 </script>
-                <script src="assets/js/script.js"></script>
+
 </body>
 </html>

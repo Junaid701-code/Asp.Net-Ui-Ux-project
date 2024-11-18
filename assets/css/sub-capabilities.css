@@ -1,7 +1,6 @@
 body {
     margin: 0;
     line-height: normal;
-    font-family: 'Poppins', sans-serif;
     }
     .main-container{
         display: flex;
@@ -130,6 +129,7 @@ body {
     font-size: 10px;
 }
 .main-nav5s {
+    margin-top: auto;
     align-self: stretch;
     border-radius: 10px;
     background: linear-gradient(180deg, #f9fcff, #f5f7f9);
@@ -145,7 +145,7 @@ body {
 }
 .frame-groups {
     align-self: stretch;
-    height: 593px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -161,6 +161,7 @@ body {
     flex-direction: column;
     padding: 24px;
     gap: 24px;
+    height: 100vh;
 }
 .assessment {
     position: relative;
@@ -207,7 +208,6 @@ body {
     justify-content: center;
 }
 .farhan-nadeem {
-    font-family: Poppins;
     position: relative;
     letter-spacing: 0.02em;
 }
@@ -370,16 +370,11 @@ body {
 }
 .frame-parent6 {
     width: 300px;
-    border-radius: 6px;
-    background-color: #fff;
-    border: 1px dashed #dddee5;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    border: 2px solid #ddd;
+    border-radius: 8px;
     padding: 24px;
+    transition: height 0.3s ease; /* Smooth height transition */
+    overflow: hidden; /* Prevents dropdown from showing outside */
 }
 .frame-parent7 {
     width: 300px;
@@ -498,18 +493,6 @@ body {
     font-size: 12px;
     color: #5a5f62;
 }
-.explain-your-current {
-    flex: 1;
-    position: relative;
-}
-.explain-your-current-status-in-wrapper {
-    align-self: stretch;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
 .frame-wrapper14 {
     align-self: stretch;
     border-radius: 8px;
@@ -617,16 +600,12 @@ body {
 }
 .frame-wrapper12 {
     flex: 1;
-    display: flex;
-    /* display: none; */
+    display: flex; 
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     font-size: 16px;
-}
-#frameWrapper12 {
-    display: none; /* Hide initially */
-}
+} 
 .frame-parent4 {
     align-self: stretch;
     display: flex;
@@ -698,4 +677,98 @@ body {
     color: #000419;
     font-family: Poppins;
 }
+.notification-container {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50px; /* Adjust based on the bell icon's position */
+    right: 10px; /* Adjust for alignment */
+    background-color: #ffffff;
+    border: 1px solid #dddee5;
+    box-shadow: 0px 8px 20px rgba(92, 156, 212, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    z-index: 1000;
+}
 
+.notification-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    text-align: center;
+    margin: 0;
+}
+/* Parent container for dropdown */
+/* Parent container for dropdown */
+.dropdown-wrapper {
+    position: relative; /* Ensures dropdown menu is positioned relative to this container */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: left;
+    z-index: 1000; /* Ensure it stays above other content */
+    position: absolute; /* Stay within the dashed box */
+    width: calc(100% - 20px); /* Adjust based on dashed box padding */
+}
+
+/* Dropdown icon */
+.dropdown-icon {
+    margin-top: -20px;
+    cursor: pointer;
+}
+a{
+    display: flex;
+}
+.sub-capability-header {
+    display: flex;
+    justify-content: space-between; /* Pushes the button to the right */
+    align-items: center; /* Ensures vertical alignment */
+    width: 100%; /* Ensures the row spans the full width */
+    margin-bottom: 16px; /* Optional spacing below */
+}
+
+.save-progress-button {
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif; /* Matches the font style */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between the text and icon */
+}
+
+.save-progress-button img {
+    height: 16px;
+    width: 16px;
+}
+
+.save-progress-button:hover {
+    background-color: #0056b3; /* Slightly darker shade on hover */
+}
+a{
+    text-decoration: none;
+}  
+.custom-textarea {
+    width: 100%; /* Matches the full width of the parent div */
+    height: 110px; /* Matches the height defined in frame-wrapper14 */
+    border: 1px solid #dddee5; /* Matches the border style of frame-wrapper14 */
+    border-radius: 8px; /* Matches the border-radius of frame-wrapper14 */
+    padding: 6px; /* Ensures consistent padding */
+    font-size: 14px; /* Use font-size consistent with other elements */
+    font-family: 'Poppins', sans-serif; /* Matches the existing font family */
+    color: #5a5f62; /* Text color */
+    box-sizing: border-box; /* Ensures padding does not increase dimensions */
+    resize: none; /* Prevents resizing of the text area */
+}

@@ -159,3 +159,5 @@ window.addEventListener('scroll', () => {
         const frameWrapper12 = document.getElementById('frameWrapper12');
         frameWrapper12.style.display = frameWrapper12.style.display === 'none' ? 'flex' : 'none';
     }
+
+    
